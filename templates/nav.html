@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+        <title>Tab-now</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        
+        <!-- JQuery -->
+
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<style>
+    
+    #special{
+        font-size: 15px;
+    }
+    #start{
+       text-align: center;
+    }
+    ::selection {
+        background: #1589FF;
+        color: white;
+    }
+    a.url {
+        background-color: #1589FF;
+        font-size: 8px;
+        margin-left: 10px;
+        color: white;
+        padding: 5px;
+    }
+    a:hover{
+        color: #003F87;
+        text-decoration: none;
+    }
+    a.logo{
+       font-weight: bold;
+       font-size: 27px;
+       color: white;
+    }
+    .btn.btn-outline-success:hover{
+        background-color: #1589FF;
+    }
+    .n_items{
+        margin-top: 10px;
+        margin-right:20px;
+        font-size: 20px;
+    }
+    a{
+        color: white;
+    }
+    #icons{
+        float:left;
+    }
+    .brightness:hover{
+        border-style: groove;
+        border-color:#1589FF;
+    }
+    .navbar{
+        background-color: #1589FF;
+    }
+    .navbar-brand.logo{
+        color: white;
+    }
+    .navbar-brand.logo:hover{
+        color:#003F87;
+    }
+    .btn{
+        background-color: #1589FF;
+        color: white;
+        font-size: 20px;
+        
+    }
+    .btn:hover {
+        opacity: 0.6;
+    
+    }
+  
+   </style>
+   
+   </head>
+    <body>
+        <div class = "container-fluid" >
+        <nav class="navbar navbar-light">
+                <div id="icons">
+                    <ul class="nav">
+                        <li class="header"><a class="navbar-brand logo" href="/">Tab-now</a></li>
+                        <li class="n_items active"><a href="/">Home</a></li>
+                        <li class="n_items"><a href="/tab_page">Tablature</a></li>
+                        <li class="n_items"><a href="/quiz">Quiz</a></li>
+                    </ul>
+                </div>
+        </nav>
+            <div class="containter-fluid content">
+               {% block content %}
+               
+               {% endblock %}           
+            </div>
+    </body>
+</htmL>

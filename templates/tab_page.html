@@ -1,0 +1,98 @@
+{% extends "nav.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'tablature.js') }}"></script>
+   <style>
+       .loop{
+            display: center;
+       }
+       .list-group{
+           background-color: None;
+           text-align: center;
+       }
+       img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+       }
+       .btn.quiz {
+            background-color:#1589FF;
+            border: none;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 1;
+            transition: 0.3s;
+        }
+        .btn:hover {opacity: 0.6}
+  
+   </style>
+   
+   </head>
+   <body>
+    <div class = "container-fluid" >
+        <div id="loop">
+            <br>
+            <div class="list-group">
+                <h4>Part 1: Strings, Frets and Fingers</h4>
+                <img src="https://guitarlessons-com.s3.amazonaws.com/media/blog/frets-fingers-strings-hr.png" alt="tab_image" height="350" width="500"><br>
+                <p>In guitar tablature each number thats annoted on the string represents the area of the fretboard that you play it on. <br><br>
+                   The numbers on a piece of tablature represent the fret numbers you will press down. Single numbers from left to right <br><br>
+                   are single note melodies. Numbers stacked vertally are called <b> chords</b>. Chords are notes played simultaneously.</p>
+    
+            </div>
+            <br>
+            <div class="list-group" >
+                <h4>Part 2: Standard Music vs Tablature</h4>
+                <img src="https://guitarlessons-com.s3.amazonaws.com/media/blog/tab-basic-layout.png" alt="tab_image" height="350" width="500"><br>
+                <p>Tablature is annoted differently from standard music notion. Notice that there are only 5 lines in Standard music <br><br>
+                   but 6 lines in Tablature. The difference between the two is the fact that tab uses numbers to mark notes and standard<br><br>
+                   uses symbols as notes. The numbers on the side represent the number of guitar strings and the name of each string.</p>
+        
+                 
+                <br>
+            </div>
+            <div class="list-group">
+                <h4> Part 3: Guitar Fretboard Layout</h4>
+                <img src="https://www.guitarmusictheory.com/wp-content/uploads/2010/09/guitar-fretboard-grid-blank-616.png" alt="tab_image" height="350" width="500"><br>
+                <p>There are usually 22-24 frets on each guitar. One thing you should know is that the fretboat notes start over after the<br><br>
+                12th fret. <b>Reminder!</b> the 6th strings is also called the <b>Low E</b> and the 1st string is called the <b>High E string</b>. The letters<br><br>
+                next to the numbers are the names of each string on the guitar. This letter combination is known as standard E tuning.</p>
+                
+            </div>
+            <div class="list-group">
+                <h4> Part 4: Single Notes and Chords</h4>
+                <img src="https://guitarlessons-com.s3.amazonaws.com/media/blog/tab-notes-chords.png" alt="tab_image" height="350" width="500"><br>
+                <p>Single notes in guitar tab are offset and played separately, while chords are notes that are played<br><br>
+                simultaneously (think strumming all 6 string). The 0 represents an <b>Open</b> note, meaning you play the string<br><br>
+                with out pressing down on the string. Almost all tabs have open notes in them, whether in chords or singular.</p>
+            </div>
+            <div class="list-group">
+                <h4> Part 5: Scales in Tablature</h4>
+                <img src="https://www.guitarcommand.com/wp-content/uploads/2019/08/G-Pentatonic-Minor-Guitar-Scale-TAB-2-Octave.png" alt="tab_image" height="350" width="500"><br>
+                <p>Scales in Tablature are represented as a sequence of notes. A Scales that starts at the <b>Low E</b> string <br><br>
+                 and ends at the <b>High E</b> is called a <b>Descending</b> scale. A Scale that starts from the <b>High E</b> and works<br><br>
+                 up is called an <b>Ascending</b> scale. There are many different scales and modes represented in guitar tablature.</p>
+               
+            </div>
+            <div class="list-group">
+                <h4> Part 6: Ascending and Descending Scales</h4>
+                <img src="https://www.guitarcommand.com/wp-content/uploads/2019/08/2-Octave-C-Major-Scale-Guitar-TAB-2nd-Position.png" alt="tab_image" height="350" width="500"><br>
+                <p>Ready to test your knowledge? <br><br>
+                Feel free to go back through the slides to refresh if you aren't sure!</p>
+              <div>
+               <a href="/quiz"><button class="btn quiz">Quiz</button></a>
+              </div>
+                
+            </div>
+            <nav aria-label="Page navigation ">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item prev-page"><a class="page-link" href="#">Previous</a></li>
+                </ul>
+              </nav>
+        </div>
+        
+    </div>
+</body>
+{% endblock %}
